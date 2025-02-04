@@ -9,14 +9,14 @@ function adicionarAmigo() {
     } else{
         alert ("Por favor, insira um nome.");
     }
-    atualizarListaAmigos()
+    atualizarListaAmigos();
     limparCampo();
     //console.log(listaAmigos);
 }
 
 function limparCampo() {
     adicionar = document.querySelector("input");
-    adicionar.value = '';
+    adicionar.value = "";
 }
 
 function atualizarListaAmigos() {
