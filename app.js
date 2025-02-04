@@ -13,10 +13,9 @@ function adicionarAmigo() {
     limparCampo();
     console.log(listaAmigos);
 }
-adicionarAmigo()
 
 function limparCampo() {
-    adicionar = document.querySelector('input');
+    adicionar = document.querySelector("input");
     adicionar.value = '';
 }
 
