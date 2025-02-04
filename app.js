@@ -9,7 +9,7 @@ function adicionarAmigo() {
     } else{
         alert ("Por favor, insira um nome.");
     }
-
+    atualizarListaAmigos()
     limparCampo();
     console.log(listaAmigos);
 }
@@ -30,8 +30,6 @@ function atualizarListaAmigos() {
         listaHTML.appendChild(li);
     }
 }
-atualizarListaAmigos();
-
 
 // Função para sortear um amigo aleatoriamente
 function sortearAmigo() {
@@ -45,7 +43,7 @@ function sortearAmigo() {
 
         // Mostra o resultado
         let resultado = document.getElementById("resultado");
-        resultado.innerHTML = (`Amigo Sorteado: " ${amigoSorteado}`);
+        resultado.innerHTML = (`Amigo Sorteado: ${amigoSorteado}`);
     } else {
         resultado.innerHTML = ("Nenhum amigo disponível para sortear.");
     }
