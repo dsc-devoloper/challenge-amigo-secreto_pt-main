@@ -11,7 +11,7 @@ function adicionarAmigo() {
     }
     atualizarListaAmigos()
     limparCampo();
-    console.log(listaAmigos);
+    //console.log(listaAmigos);
 }
 
 function limparCampo() {
