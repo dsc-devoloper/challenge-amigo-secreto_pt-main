@@ -20,3 +20,16 @@ function limparCampo() {
     adicionar.value = '';
 }
 
+function atualizarListaAmigos() {
+    let listaHTML = document.getElementById("listaAmigos");
+    listaHTML.innerHTML = ""; // Limpa a lista antes de adicionar novos elementos
+
+    // Percorre o array de amigos e adiciona cada nome como um <li>
+    for (let i = 0; i < listaAmigos.length; i++) {
+        let li = document.createElement("li");
+        li.textContent = listaAmigos[i];
+        listaHTML.appendChild(li);
+    }
+}
+atualizarListaAmigos();
+
